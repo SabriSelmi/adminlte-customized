@@ -134,7 +134,7 @@ class AdminLTE extends Component {
     let {
       children, title, titleShort,
     } = this.props;
-    const { searchbarFilter } = this.props;
+    const { searchbarFilter, direction } = this.props;
     const { homeTo } = this.props;
     {
       if (!children) children = [<div>No content</div>];
@@ -203,7 +203,7 @@ class AdminLTE extends Component {
       console.error('Pass footer either as prop or child but not both');
     }
     const sidebar = childSidebar || (
-      <Sidebar.Core searchbarFilter={searchbarFilter}>
+      <Sidebar.Core searchbarFilter={searchbarFilter} direction={direction}>
         {propSidebar}
       </Sidebar.Core>
     );
@@ -276,6 +276,7 @@ AdminLTE.defaultProps = {
   titleShort: ['A', 'LT'],
   browserTitle: null,
   theme: 'blue',
+  direction : "ltr",
   //  controlSidebar: null,
   footer: null,
   sidebar: undefined,

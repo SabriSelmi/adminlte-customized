@@ -29,7 +29,7 @@ class Sidebar extends Component {
   }
 
   render() {
-    const { children, searchbarFilter } = this.props;
+    const { children, searchbarFilter, direction } = this.props;
     let localChildren;
     if (children) {
       localChildren = children.length ? children : [children];
@@ -79,7 +79,7 @@ class Sidebar extends Component {
       }
     }
     return (
-      <aside className="main-sidebar-ar">
+      <aside className={direction === "rtl"? "main-sidebar-ar" : "main-sidebar"}>
         <section className="sidebar">
           <ul className="sidebar-menu" data-widget="tree" ref={(c) => { this.widgetReference = c; }}>
             {localChildren}
@@ -93,6 +93,7 @@ class Sidebar extends Component {
 Sidebar.defaultProps = {
   children: null,
   searchbarFilter: false,
+  direction : "ltr"
 };
 
 Sidebar.propTypes = {

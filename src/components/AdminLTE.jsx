@@ -213,7 +213,7 @@ class AdminLTE extends Component {
       <Router>
         <div className="wrapper">
           <header className="main-header">
-            <Link className="logo" to={homeTo}>
+            <Link className={direction === "ltr" ? "logo" : "logo-ar"} to={homeTo}>
               <span className="logo-mini">
                 <b>{titleShortBold}</b>
                 {titleShotThin}
@@ -223,7 +223,7 @@ class AdminLTE extends Component {
                 {titlethin}
               </span>
             </Link>
-            <nav className="navbar navbar-static-top">
+            <nav className={direction === "ltr" ? "navbar navbar-static-top" : "navbar-ar navbar-static-top"}>
               <div className="sidebar-toggle" data-toggle="push-menu" role="button">
                 <FontAwesomeIcon icon={['fas', 'bars']} />
                 <span className="sr-only">Toggle navigation</span>

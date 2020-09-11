@@ -58,10 +58,14 @@
 }
 .skin-green-light .wrapper,
 .skin-green-light .main-sidebar,
+.skin-green-light .main-sidebar-ar,
 .skin-green-light .left-side {
   background-color: #f9fafc;
 }
 .skin-green-light .main-sidebar {
+  border-right: 1px solid #d2d6de;
+}
+.skin-green-light .main-sidebar-ar {
   border-right: 1px solid #d2d6de;
 }
 .skin-green-light .user-panel > .info,

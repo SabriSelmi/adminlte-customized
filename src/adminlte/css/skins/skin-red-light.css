@@ -58,10 +58,14 @@
 }
 .skin-red-light .wrapper,
 .skin-red-light .main-sidebar,
+.skin-red-light .main-sidebar-ar,
 .skin-red-light .left-side {
   background-color: #f9fafc;
 }
 .skin-red-light .main-sidebar {
+  border-right: 1px solid #d2d6de;
+}
+.skin-red-light .main-sidebar-ar {
   border-right: 1px solid #d2d6de;
 }
 .skin-red-light .user-panel > .info,

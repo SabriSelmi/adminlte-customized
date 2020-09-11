@@ -58,10 +58,14 @@
 }
 .skin-yellow-light .wrapper,
 .skin-yellow-light .main-sidebar,
+.skin-yellow-light .main-sidebar-ar,
 .skin-yellow-light .left-side {
   background-color: #f9fafc;
 }
 .skin-yellow-light .main-sidebar {
+  border-right: 1px solid #d2d6de;
+}
+.skin-yellow-light .main-sidebar-ar {
   border-right: 1px solid #d2d6de;
 }
 .skin-yellow-light .user-panel > .info,

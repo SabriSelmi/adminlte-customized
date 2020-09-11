@@ -58,6 +58,7 @@
 }
 .skin-blue .wrapper,
 .skin-blue .main-sidebar,
+.skin-blue .main-sidebar-ar,
 .skin-blue .left-side {
   background-color: #222d32;
 }
@@ -200,10 +201,14 @@
 }
 .skin-blue-light .wrapper,
 .skin-blue-light .main-sidebar,
+.skin-blue-light .main-sidebar-ar,
 .skin-blue-light .left-side {
   background-color: #f9fafc;
 }
 .skin-blue-light .main-sidebar {
+  border-right: 1px solid #d2d6de;
+}
+.skin-blue-light .main-sidebar-ar {
   border-right: 1px solid #d2d6de;
 }
 .skin-blue-light .user-panel > .info,
@@ -383,6 +388,7 @@
 }
 .skin-black .wrapper,
 .skin-black .main-sidebar,
+.skin-black .main-sidebar-ar,
 .skin-black .left-side {
   background-color: #222d32;
 }
@@ -543,10 +549,14 @@
 }
 .skin-black-light .wrapper,
 .skin-black-light .main-sidebar,
+.skin-black-light .main-sidebar-ar,
 .skin-black-light .left-side {
   background-color: #f9fafc;
 }
 .skin-black-light .main-sidebar {
+  border-right: 1px solid #d2d6de;
+}
+.skin-black-light .main-sidebar-ar {
   border-right: 1px solid #d2d6de;
 }
 .skin-black-light .user-panel > .info,
@@ -695,6 +705,7 @@
 }
 .skin-green .wrapper,
 .skin-green .main-sidebar,
+.skin-green .main-sidebar-ar,
 .skin-green .left-side {
   background-color: #222d32;
 }
@@ -829,10 +840,14 @@
 }
 .skin-green-light .wrapper,
 .skin-green-light .main-sidebar,
+.skin-green-light .main-sidebar-ar,
 .skin-green-light .left-side {
   background-color: #f9fafc;
 }
 .skin-green-light .main-sidebar {
+  border-right: 1px solid #d2d6de;
+}
+.skin-green-light .main-sidebar-ar {
   border-right: 1px solid #d2d6de;
 }
 .skin-green-light .user-panel > .info,
@@ -981,6 +996,7 @@
 }
 .skin-red .wrapper,
 .skin-red .main-sidebar,
+.skin-red .main-sidebar-ar,
 .skin-red .left-side {
   background-color: #222d32;
 }
@@ -1115,10 +1131,14 @@
 }
 .skin-red-light .wrapper,
 .skin-red-light .main-sidebar,
+.skin-red-light .main-sidebar-ar,
 .skin-red-light .left-side {
   background-color: #f9fafc;
 }
 .skin-red-light .main-sidebar {
+  border-right: 1px solid #d2d6de;
+}
+.skin-red-light .main-sidebar-ar {
   border-right: 1px solid #d2d6de;
 }
 .skin-red-light .user-panel > .info,
@@ -1267,6 +1287,7 @@
 }
 .skin-yellow .wrapper,
 .skin-yellow .main-sidebar,
+.skin-yellow .main-sidebar-ar,
 .skin-yellow .left-side {
   background-color: #222d32;
 }
@@ -1401,10 +1422,14 @@
 }
 .skin-yellow-light .wrapper,
 .skin-yellow-light .main-sidebar,
+.skin-yellow-light .main-sidebar-ar,
 .skin-yellow-light .left-side {
   background-color: #f9fafc;
 }
 .skin-yellow-light .main-sidebar {
+  border-right: 1px solid #d2d6de;
+}
+.skin-yellow-light .main-sidebar-ar {
   border-right: 1px solid #d2d6de;
 }
 .skin-yellow-light .user-panel > .info,
@@ -1553,6 +1578,7 @@
 }
 .skin-purple .wrapper,
 .skin-purple .main-sidebar,
+.skin-purple .main-sidebar-ar,
 .skin-purple .left-side {
   background-color: #222d32;
 }
@@ -1687,10 +1713,14 @@
 }
 .skin-purple-light .wrapper,
 .skin-purple-light .main-sidebar,
+.skin-purple-light .main-sidebar-ar,
 .skin-purple-light .left-side {
   background-color: #f9fafc;
 }
 .skin-purple-light .main-sidebar {
+  border-right: 1px solid #d2d6de;
+}
+.skin-purple-light .main-sidebar-ar {
   border-right: 1px solid #d2d6de;
 }
 .skin-purple-light .user-panel > .info,

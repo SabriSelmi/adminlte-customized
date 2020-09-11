@@ -58,10 +58,14 @@
 }
 .skin-blue-light .wrapper,
 .skin-blue-light .main-sidebar,
+.skin-blue-light .main-sidebar-ar,
 .skin-blue-light .left-side {
   background-color: #f9fafc;
 }
 .skin-blue-light .main-sidebar {
+  border-right: 1px solid #d2d6de;
+}
+.skin-blue-light .main-sidebar-ar {
   border-right: 1px solid #d2d6de;
 }
 .skin-blue-light .user-panel > .info,

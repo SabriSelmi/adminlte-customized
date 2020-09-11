@@ -77,10 +77,14 @@
 }
 .skin-black-light .wrapper,
 .skin-black-light .main-sidebar,
+.skin-black-light .main-sidebar-ar,
 .skin-black-light .left-side {
   background-color: #f9fafc;
 }
 .skin-black-light .main-sidebar {
+  border-right: 1px solid #d2d6de;
+}
+.skin-black-light .main-sidebar-ar {
   border-right: 1px solid #d2d6de;
 }
 .skin-black-light .user-panel > .info,

@@ -58,10 +58,14 @@
 }
 .skin-purple-light .wrapper,
 .skin-purple-light .main-sidebar,
+.skin-purple-light .main-sidebar-ar,
 .skin-purple-light .left-side {
   background-color: #f9fafc;
 }
 .skin-purple-light .main-sidebar {
+  border-right: 1px solid #d2d6de;
+}
+.skin-purple-light .main-sidebar-ar {
   border-right: 1px solid #d2d6de;
 }
 .skin-purple-light .user-panel > .info,

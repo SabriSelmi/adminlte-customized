@@ -302,7 +302,7 @@ a:focus {
   font-family: fontAwesome;
 }
 .main-header .sidebar-toggle-ar {
-  float: left;
+  float: right;
   background-color: transparent;
   background-image: none;
   padding: 15px 15px;

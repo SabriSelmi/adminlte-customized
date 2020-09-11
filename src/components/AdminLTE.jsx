@@ -237,7 +237,7 @@ class AdminLTE extends Component {
           <Switch>
             {modalRoutes}
           </Switch>
-          <div className="content-wrapper">
+          <div className={direction === "ltr" ? "content-wrapper" : "content-wrapper-ar"}>
             <Switch>
               {nonModalRoutes}
             </Switch>

@@ -224,11 +224,11 @@ class AdminLTE extends Component {
               </span>
             </Link>
             <nav className={direction === "ltr" ? "navbar navbar-static-top" : "navbar-ar navbar-static-top"}>
-              <div className="sidebar-toggle" data-toggle="push-menu" role="button">
+              <div className={direction === "ltr" ? "sidebar-toggle": "sidebar-toggle-ar"} data-toggle="push-menu" role="button">
                 <FontAwesomeIcon icon={['fas', 'bars']} />
                 <span className="sr-only">Toggle navigation</span>
               </div>
-              <div className="navbar-custom-menu">
+              <div className={direction === "ltr" ? "navbar-custom-menu" : "navbar-custom-menu-ar"}>
                 {menu}
               </div>
             </nav>

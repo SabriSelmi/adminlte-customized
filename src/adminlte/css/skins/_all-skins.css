@@ -1419,10 +1419,12 @@
  * Skin: Yellow
  * ------------
  */
-.skin-yellow-light .main-header .navbar {
+.skin-yellow-light .main-header .navbar,
+.skin-yellow-light .main-header .navbar-ar {
   background-color: #f39c12;
 }
-.skin-yellow-light .main-header .navbar .nav > li > a {
+.skin-yellow-light .main-header .navbar .nav > li > a,
+.skin-yellow-light .main-header .navbar-ar .nav > li > a {
   color: #ffffff;
 }
 .skin-yellow-light .main-header .navbar .nav > li > a:hover,
@@ -1431,31 +1433,45 @@
 .skin-yellow-light .main-header .navbar .nav .open > a,
 .skin-yellow-light .main-header .navbar .nav .open > a:hover,
 .skin-yellow-light .main-header .navbar .nav .open > a:focus,
-.skin-yellow-light .main-header .navbar .nav > .active > a {
+.skin-yellow-light .main-header .navbar .nav > .active > a,
+.skin-yellow-light .main-header .navbar-ar .nav > li > a:hover,
+.skin-yellow-light .main-header .navbar-ar .nav > li > a:active,
+.skin-yellow-light .main-header .navbar-ar .nav > li > a:focus,
+.skin-yellow-light .main-header .navbar-ar .nav .open > a,
+.skin-yellow-light .main-header .navbar-ar .nav .open > a:hover,
+.skin-yellow-light .main-header .navbar-ar .nav .open > a:focus,
+.skin-yellow-light .main-header .navbar-ar .nav > .active > a {
   background: rgba(0, 0, 0, 0.1);
   color: #f6f6f6;
 }
-.skin-yellow-light .main-header .navbar .sidebar-toggle {
+.skin-yellow-light .main-header .navbar .sidebar-toggle,
+.skin-yellow-light .main-header .navbar-ar .sidebar-toggle {
   color: #ffffff;
 }
-.skin-yellow-light .main-header .navbar .sidebar-toggle:hover {
+.skin-yellow-light .main-header .navbar .sidebar-toggle:hover,
+.skin-yellow-light .main-header .navbar-ar .sidebar-toggle:hover {
   color: #f6f6f6;
   background: rgba(0, 0, 0, 0.1);
 }
-.skin-yellow-light .main-header .navbar .sidebar-toggle {
+.skin-yellow-light .main-header .navbar .sidebar-toggle,
+.skin-yellow-light .main-header .navbar-ar .sidebar-toggle {
   color: #fff;
 }
-.skin-yellow-light .main-header .navbar .sidebar-toggle:hover {
+.skin-yellow-light .main-header .navbar .sidebar-toggle:hover,
+.skin-yellow-light .main-header .navbar-ar .sidebar-toggle:hover {
   background-color: #e08e0b;
 }
 @media (max-width: 767px) {
-  .skin-yellow-light .main-header .navbar .dropdown-menu li.divider {
+  .skin-yellow-light .main-header .navbar .dropdown-menu li.divider,
+  .skin-yellow-light .main-header .navbar-ar .dropdown-menu li.divider {
     background-color: rgba(255, 255, 255, 0.1);
   }
-  .skin-yellow-light .main-header .navbar .dropdown-menu li a {
+  .skin-yellow-light .main-header .navbar .dropdown-menu li a,
+  .skin-yellow-light .main-header .navbar-ar .dropdown-menu li a {
     color: #fff;
   }
-  .skin-yellow-light .main-header .navbar .dropdown-menu li a:hover {
+  .skin-yellow-light .main-header .navbar .dropdown-menu li a:hover,
+  .skin-yellow-light .main-header .navbar-ar .dropdown-menu li a:hover {
     background: #e08e0b;
   }
 }

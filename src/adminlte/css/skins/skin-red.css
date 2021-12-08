@@ -907,14 +907,14 @@ aside.main-sidebar-ar {
   background:  #FFFFFF;
   /* cursor: pointer; */
   font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   /* font-size: 14px; */
   line-height: 1;
   display: flex;
   align-items: center;
   font-size: 2rem;
-  padding-top: 5px;
-  padding-bottom: 3px;
+  padding-top: 15px;
+  padding-bottom: 10px;
   white-space: pre-wrap;
   /* font-weight: 600; */
 }

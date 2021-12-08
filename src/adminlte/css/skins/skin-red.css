@@ -856,7 +856,7 @@ aside.main-sidebar-ar {
   z-index: 1031 !important;
   max-height: calc(100vh - 54px) !important;
   height: calc(100vh - 54px);
-  top: 54px;
+  top: 84px;
   padding-top: 0px;
   /* outline: 1px solid green; */
 }

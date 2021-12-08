@@ -229,7 +229,7 @@ a:focus {
   margin-bottom: 0;
   margin-left: 230px;
   border: none;
-  min-height: 50px;
+  min-height: 80px;
   border-radius: 0;
 }
 .main-header .navbar-ar {
@@ -239,7 +239,7 @@ a:focus {
   margin-bottom: 0;
   margin-right: 230px;
   border: none;
-  min-height: 50px;
+  min-height: 80px;
   border-radius: 0;
 }
 .layout-top-nav .main-header .navbar {
@@ -356,7 +356,7 @@ a:focus {
   transition: width 0.3s ease-in-out;
   display: block;
   float: left;
-  height: 50px;
+  height: 80px;
   font-size: 20px;
   line-height: 50px;
   text-align: center;
@@ -373,7 +373,7 @@ a:focus {
   display: block;
   float: right;
   right:0;
-  height: 50px;
+  height: 80px;
   font-size: 20px;
   line-height: 50px;
   text-align: center;

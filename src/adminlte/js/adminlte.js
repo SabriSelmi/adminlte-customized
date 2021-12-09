@@ -963,6 +963,10 @@ if (typeof jQuery === 'undefined') {
   });
 
 }(jQuery);
+
+
+
+// NEW JS
 var isSearchBarInputBusy = false;
 var interValTimeout = 1800000;
 var intervalSeconds = 0;
@@ -1025,7 +1029,7 @@ function dynamicJsFixes(){
         }
     }
 
-var mouseenterEventListener = function(event){
+    var mouseenterEventListener = function(event){
         var evTarget = event.target;
         var anchorEl;
 
@@ -1092,7 +1096,7 @@ var mouseenterEventListener = function(event){
         }
     }
 
-    var asideScrollEventLostener = function(event){
+    var asideScrollEventListener = function(event){
         var evTarget = event.target;
         var anchorEl;
 
@@ -1121,7 +1125,69 @@ var mouseenterEventListener = function(event){
         }
     }
 
+    var asideScrollEventListener = function(event){
+        var evTarget = event.target;
+        var anchorEl;
+
+        var treeviewEl = evTarget.querySelector(".sidebar-menu > .treeview.menu-open");
+        if(treeviewEl){
+            var subTreeviewEl = treeviewEl.querySelector(".treeview-menu"); 
+            subTreeviewEl.style.top = treeviewEl.getBoundingClientRect().top + "px";
+        }
+
+        //console.log("mouseoutEventListener evTarget = ", evTarget);
+
+        if(evTarget.matches(".sidebar-menu > .treeview")){
+            anchorEl = evTarget.firstElementChild;
+        }
+
+        /*else if(evTarget.matches(".sidebar-menu > .treeview > ")){
+            anchorEl = evTarget.firstElementChild;
+        }*/
+
+        if(anchorEl){
+            if(anchorEl.parentElement.classList.contains("menu-open")){
+                anchorEl.parentElement.classList.remove("menu-open");
+                anchorEl.classList.remove("custom-open");
+                anchorEl.parentElement.querySelector(".treeview-menu").style.top = "";
+            }
+        }
+    }
+
+    var searchTogglerClickEventListener = function(event){
+        var evTarget = event.target;
+        var btnElement;
+
+        var bool = evTarget.classList.contains("btn-toggle-search");
+        
+        if(evTarget.classList.contains("btn-toggle-search")){
+            btnElement = evTarget;
+        }
+
+        else if(evTarget.parentElement && evTarget.parentElement.classList.contains("btn-toggle-search")){
+            btnElement = evTarget.parentElement;
+        }
+
+
+        if(btnElement){
+            var navTabsCustom = btnElement.closest(".nav-tabs-custom");
+            if(navTabsCustom){
+                if(btnElement.classList.contains("state-off")){
+                    btnElement.classList.remove("state-off");
+                    btnElement.classList.add("state-on");
+                    navTabsCustom.classList.remove("tab-content-custom-hide");
+                }
+                else{
+                    btnElement.classList.add("state-off");
+                    btnElement.classList.remove("state-on");
+                 navTabsCustom.classList.add("tab-content-custom-hide");
+                }   
+            }
+        }
+    }
+
     document.addEventListener("input",inputEventListener);
+    document.addEventListener("click",searchTogglerClickEventListener);
 
     var waitForElementsInterval = setInterval(()=>{
         intervalSeconds+=500;
@@ -1137,7 +1203,7 @@ var mouseenterEventListener = function(event){
                 el.addEventListener("mouseleave", mouseleaveEventListener);
             });
 
-            asideEl.addEventListener("scroll", asideScrollEventLostener);
+            asideEl.addEventListener("scroll", asideScrollEventListener);
 
             clearInterval(waitForElementsInterval);
         }

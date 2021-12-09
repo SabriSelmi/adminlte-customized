@@ -893,9 +893,9 @@ aside.main-sidebar-ar {
     background-color: #FFFFFF !important;
     color: red;
     z-index: 1031 !important;
-    max-height: calc(100vh - 54px) !important;
-    height: calc(100vh - 54px);
-    top: 54px;
+    max-height: calc(100vh - 80px) !important;
+    height: calc(100vh - 80px);
+    top: 80px;
     padding-top: 0px;
     /* outline: 1px solid green; */
 }

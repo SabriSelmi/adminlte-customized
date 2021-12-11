@@ -154,7 +154,7 @@
 /* =================== Added styles ====================== */
 
 /*
-<link href="https://sabriselmi.github.io/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="https://ghanhass.github.io/hassoon-cdn//font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css">
 
 <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
 */
@@ -164,13 +164,13 @@
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 400;
-  src: url('https://sabriselmi.github.io/fonts/roboto/roboto-condensed-v19-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('https://ghanhass.github.io/hassoon-cdn/fonts/roboto/roboto-condensed-v19-latin-regular.eot'); /* IE9 Compat Modes */
   src: local(''),
-       url('https://sabriselmi.github.io/fonts/roboto/roboto-condensed-v19-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('https://sabriselmi.github.io/fonts/roboto/roboto-condensed-v19-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('https://sabriselmi.github.io/fonts/roboto/roboto-condensed-v19-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('https://sabriselmi.github.io/fonts/roboto/roboto-condensed-v19-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('https://sabriselmi.github.io/fonts/roboto/roboto-condensed-v19-latin-regular.svg#RobotoCondensed') format('svg'); /* Legacy iOS */
+       url('https://ghanhass.github.io/hassoon-cdn/fonts/roboto/roboto-condensed-v19-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://ghanhass.github.io/hassoon-cdn/fonts/roboto/roboto-condensed-v19-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://ghanhass.github.io/hassoon-cdn/fonts/roboto/roboto-condensed-v19-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('https://ghanhass.github.io/hassoon-cdn/fonts/roboto/roboto-condensed-v19-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://ghanhass.github.io/hassoon-cdn/fonts/roboto/roboto-condensed-v19-latin-regular.svg#RobotoCondensed') format('svg'); /* Legacy iOS */
 }
 
 .centerPage > img[alt*='Loading'][src*='loading'] {
@@ -719,7 +719,6 @@ img.navBar-title-sm {
     margin-right: 0px !important;
 }
 
-
 .sidebar-mini.sidebar-collapse .main-header .navbar-ar {margin-right: 0px;}
 
 .sidebar-mini.sidebar-collapse .main-header .logo, .sidebar-mini.sidebar-collapse .main-header .logo-ar {
@@ -774,23 +773,23 @@ img.navBar-title-sm {
 
 @keyframes button-animation-search-toggler{
      0% {
-         -moz-transform: scale(1) translate(-50%, -50%);
-         -ms-transform:  scale(1) translate(-50%, -50%);
-         -webkit-transform: scale(1) translate(-50%, -50%);
-         transform: scale(1) translate(-50%, -50%);
+         -moz-transform:scale(1) translate(-50%, -50%);
+         -ms-transform: scale(1) translate(-50%, -50%);
+         -webkit-transform:scale(1) translate(-50%, -50%);
+        transform: scale(1) translate(-50%, -50%);
      }
      
      50% {
-         -moz-transform: scale(1.1) translate(-50%, -50%);
-         -ms-transform: scale(1.1) translate(-50%, -50%);
-         -webkit-transform: scale(1.1) translate(-50%, -50%);
-         transform: scale(1.1) translate(-50%, -50%);
+         -moz-transform:scale(1.1) translate(-50%, -50%);
+         -ms-transform:scale(1.1) translate(-50%, -50%);
+         -webkit-transform:scale(1.1) translate(-50%, -50%);
+        transform: scale(1.1) translate(-50%, -50%);
      }
      100% {
-         -moz-transform: scale(1) translate(-50%, -50%);
-         -ms-transform: scale(1) translate(-50%, -50%);
-         -webkit-transform: scale(1) translate(-50%, -50%);
-         transform: scale(1) translate(-50%, -50%);
+         -moz-transform:scale(1) translate(-50%, -50%);
+         -ms-transform:scale(1) translate(-50%, -50%);
+         -webkit-transform:scale(1) translate(-50%, -50%);
+        transform: scale(1) translate(-50%, -50%);
      }
 }
 
@@ -893,9 +892,9 @@ aside.main-sidebar-ar {
     background-color: #FFFFFF !important;
     color: red;
     z-index: 1031 !important;
-    max-height: calc(100vh - 80px) !important;
-    height: calc(100vh - 80px);
-    top: 80px;
+    max-height: calc(100vh - 54px) !important;
+    /* height: calc(100vh - 54px); */
+    /* top: 54px; */
     padding-top: 0px;
     /* outline: 1px solid green; */
 }
@@ -919,8 +918,6 @@ aside.main-sidebar-ar {
 .skin-red .main-header .navbar .sidebar-toggle:hover, .skin-red .main-header .navbar-ar .sidebar-toggle-ar:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
-
-
 .skin-red .user-panel > .info, .skin-red .user-panel > .info > a {
     color: #333333;
 }
@@ -957,18 +954,15 @@ aside.main-sidebar-ar {
   transform:rotate(180deg);
 }
 
-
 .skin-red .sidebar-menu > li.header:hover::before {
   filter: invert(1);
  }
-
 
 .sidebar-mini[class] .sidebar-menu[class] > li > .treeview-menu[class] {
     background: #FFFFFF !important;
     display: none !important;
     transform: none;
 }
-
 .fr .sidebar-menu > li.header ~ 
 li:not(.header) > a,
 .en .sidebar-menu > li.header ~ 
@@ -1001,6 +995,8 @@ li:not(.header) > a {
     left: auto !important;
     right: 222px;
 }
+
+
 .sidebar-menu > .treeview > a {
   display: flex;
   align-items: center;
@@ -1129,8 +1125,6 @@ ul.sidebar-menu.tree {
   border-top: 1px solid #d2d6de !important;
 }
 
-/**/
-
 .box-twitter div:empty {
   display: none;
 }
@@ -1142,8 +1136,6 @@ ul.sidebar-menu.tree {
 .box-twitter:not(.collapsed-box) > .box-footer {
   border-top: 1px solid #d2d6de !important;
 }
-
-/**/
 
 .box-youtube div:empty {
   display: none;
@@ -1166,7 +1158,6 @@ ul.sidebar-menu.tree {
 .box-youtube:not(.collapsed-box) > .box-footer {
   border-top: 1px solid #d2d6de !important;
 }
-/**/
 
 .box-website div:empty {
   display: none;
@@ -1189,7 +1180,6 @@ ul.sidebar-menu.tree {
 .box-website:not(.collapsed-box) > .box-footer {
   border-top: 1px solid #d2d6de !important;
 }
-/**/
 
 .box-facebook_mentions div:empty {
   display: none;
@@ -1212,7 +1202,6 @@ ul.sidebar-menu.tree {
 .box-facebook_mentions:not(.collapsed-box) > .box-footer {
   border-top: 1px solid #d2d6de !important;
 }
-/**/
 
 .box-twitter_mentions div:empty {
   display: none;
@@ -1486,3 +1475,80 @@ button.btn-toggle-search.state-off i.toggle-on{
     background: #ba2227 !important;
 }
 
+aside.main-sidebar{
+  box-shadow: -4px -2px 0px 4px #ffffff, 0px 3px 4px 1px #222d32;
+}
+
+aside.main-sidebar-ar{
+  box-shadow: 4px -2px 0px 4px #ffffff, 0px 3px 4px 1px #222d32;
+}
+
+.mySelect .mySelect__option{
+  cursor:pointer;    
+}
+
+.mySelect .mySelect__option.mySelect__option--is-focused {
+  background: #8080801f;
+  color: #444;
+}
+
+.mySelect .mySelect__option.mySelect__option--is-selected {
+  background: #ba2227;
+  color: #FFFFFF;
+}
+
+.btn.btn-sm {
+  font-size: 14px;
+}
+
+.sweet-alert button.cancel {
+  background: transparent;
+  color: #444444;
+  border: 1px solid #444444;
+}
+
+.sweet-alert button.cancel:hover {
+  background-color: #b9b9b94f;
+}
+
+.sweet-alert button.confirm {
+  background-color: #ba2227 !important;
+  box-shadow: 0 0 0 1px #ba2227 !important;
+  transition: background .3s;
+}
+
+.sweet-alert button.confirm:hover {
+  background-color: transparent !important;
+  color: #ba2227;
+}
+
+.sweet-alert .sa-icon.sa-warning {
+  border-color: #ba2227 !important;
+}
+
+.sweet-alert .sa-icon.sa-warning .sa-body {
+  background-color: #ba2227 !important;
+}
+
+.sweet-alert .sa-icon.sa-warning .sa-dot {
+  background-color: #ba2227 !important;
+}
+
+@keyframes pulseWarning {
+  0% {
+    border-color: #ba2227; 
+  }
+  100% {
+    border-color: #ba2227; 
+  } 
+}
+
+
+@keyframes pulseWarningIns {
+0% {
+  background-color: #ba2227; 
+}
+100% {
+    background-color: #ba2227; 
+} 
+}

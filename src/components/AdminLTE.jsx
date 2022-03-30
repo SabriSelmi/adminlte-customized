@@ -257,10 +257,12 @@ AdminLTE.propTypes = {
   title: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.string),
     PropTypes.string,
+    PropTypes.node
   ]),
   titleShort: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.string),
     PropTypes.string,
+    PropTypes.node
   ]),
   theme: PropTypes.oneOf(Themes),
   browserTitle: PropTypes.string,

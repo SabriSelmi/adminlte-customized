@@ -102,7 +102,7 @@
     "file-loader": "^2.0.0",
     "jest": "^24.0.0",
     "mini-css-extract-plugin": "^0.5.0",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.14.1",
     "postcss-flexbugs-fixes": "^4.1.0",
     "postcss-loader": "^3.0.0",
     "resolve-url-loader": "^3.0.0",

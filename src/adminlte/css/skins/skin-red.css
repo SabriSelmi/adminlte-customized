@@ -1786,6 +1786,20 @@ thead tr{
     margin: 20px 30px 20px 275px; 
     min-height: auto;
 }
+.navbar-nav{
+    display: flex;
+}
+.user-panel {
+    padding: 0 0 0 10px;
+}
+.user-panel p{
+    margin: 0 !important;;
+}
+.user-panel > .info{
+    position:initial;
+    padding: 10px 0 0 10px;
+    text-transform: uppercase
+}
  .main-header .navbar-static-top[class]{
      background: none !important;
  }
@@ -1934,17 +1948,24 @@ thead tr{
     border-radius: 50%;
     padding: 0;
     font-size: 1.4em;
-    box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.1);
+            box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.1);
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     -webkit-transition-duration: 0.15s;
-    transition-duration: 0.15s;
+    -o-transition-duration: 0.15s;
+       transition-duration: 0.15s;
     -webkit-transition-property: transform;
-    transition-property: transform;    
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;    
 }
 .navbar-custom-menu ul li a:hover{
     -webkit-transform: scale(1.15);
-    transform: scale(1.15);
+    -ms-transform: scale(1.15);
+        transform: scale(1.15);
     background: #FFF !important;
 }
 .navbar-custom-menu ul li a svg path{
@@ -1994,6 +2015,9 @@ thead tr{
     box-shadow: 0 3px 2px 0px rgba(0, 0, 0, 0.1);
 
 }
+.small-box > .inner {
+    padding:20px 10px 10px;
+}
 aside.main-sidebar + .content-wrapper > .content .col .small-box{
     background: #FFF !important;
 }
@@ -2033,8 +2057,8 @@ aside.main-sidebar + .content-wrapper > .content .col .small-box{
     text-align: center;
 }
 .small-box .icon svg{
-    width:40px;
-    height: 40px;
+    width:50px;
+    height: 50px;
     vertical-align: top;
 }
 .small-box .icon svg path{
@@ -2115,6 +2139,30 @@ input{
     top:7px;
     right:0;
 }
+.tab-content input::-webkit-input-placeholder {
+    text-transform: uppercase;
+    font-family: gilroy-bold !important;
+    font-size: 0.9em;
+    color: #515659 !important;
+}
+.tab-content input::-moz-placeholder {
+    text-transform: uppercase;
+    font-family: gilroy-bold !important;
+    font-size: 0.9em;
+    color: #515659 !important;
+}
+.tab-content input:-ms-input-placeholder {
+    text-transform: uppercase;
+    font-family: gilroy-bold !important;
+    font-size: 0.9em;
+    color: #515659 !important;
+}
+.tab-content input::-ms-input-placeholder {
+    text-transform: uppercase;
+    font-family: gilroy-bold !important;
+    font-size: 0.9em;
+    color: #515659 !important;
+}
 .nav-tabs-custom > .nav-tabs > li > a,
 .tab-content .mySelect__placeholder,
 .tab-content input::placeholder {
@@ -2179,6 +2227,35 @@ input{
     border-right:1px solid #fff;
     padding: 4px 8px 3px 10px !important;
 }
+::placeholder,
+.form-horizontal .control-label{
+    text-transform: uppercase;
+}
+.form-horizontal.form-grid .col-xs-12 div:nth-child(14){
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.form-horizontal.form-grid .col-xs-12 div:nth-child(14) br{
+    display: none;
+}
+.form-horizontal.form-grid .col-xs-12 div:nth-child(14) .form-group {
+    width: 50%;
+    display: flex;
+}
+.form-horizontal.form-grid .col-xs-12 div:nth-child(14) .form-group label,
+.form-horizontal.form-grid .col-xs-12 div:nth-child(16) label{
+    width: auto !important;
+    white-space: nowrap !important;
+    border:0px solid red;
+    
+}
+.form-horizontal.form-grid .col-xs-12 div:nth-child(16),
+.form-horizontal.form-grid .col-xs-12 div:nth-child(15){
+    border:0px solid red;
+    width: 50%;
+    display: inline-block;
+}
 
 .label {
     background: #36a9e1 !important;;
@@ -2208,14 +2285,19 @@ body{
   margin: initial;
 }
 .row{
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .bg-image{
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   background: url(http://dev.goodlinks.tn/emonitor/bg-login-left.jpg) center;
   background-size: cover;
 }
@@ -2225,21 +2307,21 @@ body{
   padding-bottom: 80px;
 } 
 .login-logo-left img{
-  max-width: 230px;
+  max-width: 270px;
 }
 .col-left h5{
-  font-size: 1.2em;
+  font-size: 1.6em;
   font-weight: 100;
   color:#FFF;
   font-family:gilroy-bold !important;
   margin: 30px 0 10px;
 } 
 .col-left h1{
-  font-size: 2.8em;
+  font-size: 3.6em;
   color:#FFF;
   text-transform: uppercase;
   font-family:gilroy-bold !important;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   margin: 0;
 }
 .title-border{
@@ -2252,9 +2334,12 @@ body{
 }
 .loginbox-wrap{
   min-height: 100vh; 
+  display: -ms-flexbox; 
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   width: 50%;
   margin: auto;
 }
@@ -2267,6 +2352,30 @@ body{
   border-left:5px solid #36a9e1;
   height: 50px;
 }
+.login-box-body input.form-control::-webkit-input-placeholder{
+  font-family:gilroy-light !important;
+  font-size: 1.2em;
+  letter-spacing: 0.02em;
+  color:#c0c0c0;
+}
+.login-box-body input.form-control::-moz-placeholder{
+  font-family:gilroy-light !important;
+  font-size: 1.2em;
+  letter-spacing: 0.02em;
+  color:#c0c0c0;
+}
+.login-box-body input.form-control:-ms-input-placeholder{
+  font-family:gilroy-light !important;
+  font-size: 1.2em;
+  letter-spacing: 0.02em;
+  color:#c0c0c0;
+}
+.login-box-body input.form-control::-ms-input-placeholder{
+  font-family:gilroy-light !important;
+  font-size: 1.2em;
+  letter-spacing: 0.02em;
+  color:#c0c0c0;
+}
 .login-box-body input.form-control::placeholder{
   font-family:gilroy-light !important;
   font-size: 1.2em;
@@ -2275,12 +2384,12 @@ body{
 }
 .login-logo{
   color:#36a9e1;
-  font-size: 1.8em !important;
+  font-size: 2.2em !important;
   font-family:gilroy-bold !important;
 }
 .login-box-msg{
   color:#515659;
-  font-size: 1.1em;
+  font-size: 1.3em;
   font-weight: 600;
   margin:0 0 15px 0;
 }
@@ -2294,15 +2403,17 @@ a:hover{
 .login-box-body .btn{
   border-radius: 200px;
   text-transform: uppercase;
-  font-size: 1.2em;
-  background: #0e2238;
-  border:1px solid #0e2238;
-  letter-spacing: 2px;
-  height:40px;
+  font-size: 1.3em !important;;
+  background: #0e2238 !important;;
+  border:1px solid #0e2238 !important;;
+  letter-spacing: 3px;
+  height:55px;
   margin: 40px 0 20px; 
     -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+       transition-duration: 0.5s;
     -webkit-transition-property: color, background-color;
+    -o-transition-property: color, background-color;
     transition-property: color, background-color;  
 }
 .login-box-body .btn svg{
@@ -2323,8 +2434,10 @@ a:hover{
 
 /**** post details ***/
 .post-details .row{
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
 }
 .content .col-md-3{
     width: 41.66666667%;
@@ -2337,8 +2450,10 @@ a:hover{
 }
 .content .col-md-3 .box-info:nth-child(1){
     background: #0e2238;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
     text-transform: uppercase;
     padding:12px 10px 10px;
     border-radius: 5px 5px 0 0 !important;
@@ -2359,8 +2474,10 @@ a:hover{
     text-transform: uppercase
 }
 .content .col-md-3 .box-info{
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
     padding: 10px;
 }
 .content .col-md-3 .box-info:nth-child(3),
@@ -2371,6 +2488,7 @@ a:hover{
 }
 
 .content .col-md-3 .box-info:nth-child(7) .box-body {
+    display: -ms-flexbox;
     display: flex;
 }
 .btn.btn-NON_APPROUVER{
@@ -2383,8 +2501,10 @@ a:hover{
     margin: 0 0 20px 0;
 }
 .content .col-md-3 .box-info:nth-child(8) .box-body {
+    display:-ms-flexbox;
     display:flex;
-    justify-content:space-between;
+    -ms-flex-pack:justify;
+        justify-content:space-between;
     
 }
 .content .col-md-3 .box-info:nth-child(8) .box-body label{
@@ -2393,14 +2513,22 @@ a:hover{
     font-family:gilroy-light !important;;
     font-style:normal;
     color:#555;
-    font-size: 0.9em;
+    font-size: 1.0em;
 }
 .content .col-md-3 .box-info:nth-child(8) .box-body  strong{
     clear: both;
     display: block;
     font-family:gilroy-bold;
     font-weight: bold;
-    font-size:3.6em;
+    font-size:4.6em;
     color:#9ea9b4;
     padding-top: 20px;
+}
+.box-header.with-border h2{
+    text-align: left !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.4em;
+        font-family:gilroy-bold;
+    font-weight: bold;
 }

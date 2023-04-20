@@ -67,7 +67,7 @@ class Content extends Component {
             <li className="active">{title}</li>
           </ol>
         </section>
-        <section className="content">
+        <section className="content post-details">
           {children}
         </section>
       </React.Fragment>

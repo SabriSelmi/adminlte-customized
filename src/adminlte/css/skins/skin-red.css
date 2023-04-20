@@ -893,10 +893,10 @@
      border-top-color: #d2d6de;
  }
  
- .main-header .navbar-static-top[class] {
+ /*.main-header .navbar-static-top[class] {
      background-color: #bd3423 !important;
      background-color: #FFFFFF !important;
- }
+ }*/
  
  ::-moz-selection {
      background: #ba2227;
@@ -1783,8 +1783,10 @@ thead tr{
              box-shadow: none;
  }
 .main-header .navbar{
-    margin: 20px 30px 20px 275px; 
+    margin: 0px 30px 20px 275px; 
     min-height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .navbar-nav{
     display: flex;
@@ -1801,7 +1803,7 @@ thead tr{
     text-transform: uppercase
 }
  .main-header .navbar-static-top[class]{
-     background: none !important;
+     background: #ecf0f5 !important;
  }
  .main-sidebar{
    top: 120px !important; 
